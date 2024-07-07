@@ -1,0 +1,12 @@
+.main-content {
+  place-items: center;
+  margin: 32px 24px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

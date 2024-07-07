@@ -1,28 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
+import Home from './Home/Home';
+import Inaccessible from './Inaccessible/Inaccessible';
+import Navbar from './Navbar/Navbar';
 
 function App() {
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-            <div className="navbar-logo">
-                PB + J
-            </div>
-            <ul className="navbar-menu">
-                <li className="navbar-item"><a href="#" className="navbar-link">Inaccessible</a></li>
-                <li className="navbar-item"><a href="#" className="navbar-link">Accessible</a></li>
-            </ul>
-        </div>
-    </nav>
-      <main className='main-content'>
-      <h1>Web Accessibility 101: Common Issues and Solutions</h1>
-      <p>
-        Explore side-by-side comparisons of inaccessible and accessible web elements. Learn how to build a more inclusive digital world
-      </p>
-      </main>
-    </>
-  )
+    <div>
+        <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/inaccessible" element={<Inaccessible />} />
+            </Routes>
+    </div>
+);
 }
 
 export default App
