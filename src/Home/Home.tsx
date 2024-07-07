@@ -1,11 +1,9 @@
-import Navbar from '../Navbar/Navbar';
 import './Home.css'
 
 function Home() {
 
   return (
     <>
-      <Navbar />
       <main className='main-content'>
       <h1>Web Accessibility 101: Common Issues and Solutions</h1>
       <p>
