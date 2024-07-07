@@ -1,0 +1,114 @@
+.image-container {
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(144, 144, 144, 0.502);
+  text-align: center;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.overlay-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1rem;
+}
+
+.details-section {
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+}
+
+.details-header-section {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.details-content-section {
+  font-weight: 400;
+  color: #000000E5;
+  font-size: 36px;
+}
+
+.story-header {
+  font-family: "Playwrite GB S", cursive;
+  font-size: 48px;
+}
+
+.story-content {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+}
+
+.story-p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.story-b {
+  text-align: justify;
+}
+
+.button-section {
+  margin: 12px 0;
+}
+
+.rsvp-text {
+  font-family: "Cinzel", serif;
+  font-size: 64px;
+}
+
+.rsvp-time {
+  font-family: "Jost", sans-serif;
+  font-size: 36px;
+}
+
+.footer-date {
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+}
+
+.footer-name {
+  font-family: "Clicker Script", cursive;
+  font-weight: 400;
+  font-size: 74px;
+}
+
+@media (min-width: 768px) {
+  .story-group {
+    display: flex;
+  }
+
+  .story-content-group {
+    width: 85%;
+  }
+}
