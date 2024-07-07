@@ -10,10 +10,8 @@ function Navbar() {
             <Link to="/" className="navbar-logo navbar-link">
                 PB + J
             </Link>
-            <ul className="navbar-menu">
-                <Link to="/inaccessible" className="navbar-item navbar-link">Inaccessible</Link>
-                <Link to="/accessible" className="navbar-item navbar-link">Accessible</Link>
-            </ul>
+            <Link to="/inaccessible" className="navbar-item navbar-link">Inaccessible</Link>
+            <Link to="/accessible" className="navbar-item navbar-link">Accessible</Link>
         </div>
     </nav>
   )
