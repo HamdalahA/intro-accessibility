@@ -13,7 +13,7 @@
   display: block;
 }
 
-.inaccessible-overlay-text {
+.overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(144, 144, 144, 0.502);
+  color: #fff;
   text-align: center;
   font-family: "Playwrite GB S", cursive;
   font-optical-sizing: auto;
@@ -41,7 +41,7 @@
   font-size: 1rem;
 }
 
-.inaccessible-details-section {
+.details-section {
   text-transform: uppercase;
   font-family: "Cinzel", serif;
 }
@@ -51,9 +51,9 @@
   font-size: 24px;
 }
 
-.inaccessible-details-content-section {
+.details-content-section {
   font-weight: 400;
-  color: #000000E5;
+  color: wheat;
   font-size: 36px;
 }
 

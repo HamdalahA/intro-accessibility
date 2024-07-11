@@ -1,41 +1,40 @@
 import { useState } from "react";
-import RSVPModal from "../Modal/Modal";
 import firstCouplePic from "../assets/couple1.jpg";
 import secondCouplePic from "../assets/couple2.jpg";
+import "./Accessible.css";
+import AccessibleModal from "../AccessibleModal/AccessibleModal";
 
-import "./Inaccessible.css";
-
-function Inaccessible() {
+function Accessible() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
   const closeModal = () => setModalIsOpen(false);
-  
+
   return (
     <>
       <div className="image-container">
-        <img src={firstCouplePic} className="image-item" />
-        <div className="inaccessible-overlay-text">
+        <img src={firstCouplePic} className="image-item" alt="The couple holding their little finger captured at sunset" />
+        <div className="overlay-text">
           <h1>Peanut butter and Jelly</h1>
           <p>#PBandJ</p>
         </div>
       </div>
 
-      <section className="inaccessible-details-section">
+      <section className="details-section">
         <div>
           <p className="details-header-section">The date</p>
-          <p className="inaccessible-details-content-section">12th January 2024</p>
+          <p className="details-content-section">12th January 2024</p>
         </div>
 
         <div className="ceremony-section">
           <p className="details-header-section">Ceremony</p>
-          <p className="inaccessible-details-content-section">The palace</p>
+          <p className="details-content-section">The palace</p>
         </div>
       </section>
 
       <section className="meet-section">
-          <h2 className="story-header">Our story</h2>
-          <div className="story-group">
+        <h2 className="story-header">Our story</h2>
+        <div className="story-group">
           <div className="story-content-group">
             <div className="story-content">
               <p className="story-p">
@@ -69,13 +68,13 @@ function Inaccessible() {
           </div>
 
           <div className="image-container">
-            <img src={secondCouplePic} className="image-item" />
+            <img src={secondCouplePic} className="image-item" alt="A set of keyholders with smiling couple hanging by a twine rope" />
           </div>
-          </div>
+        </div>
       </section>
 
       <div className="button-section">
-      <button onClick={() => window.open('https://www.weddingshop.com/')}>Visit our registry</button>
+        <a href='https://www.weddingshop.com/'>Visit our registry</a>
       </div>
 
       <div>
@@ -84,7 +83,7 @@ function Inaccessible() {
         <button onClick={openModal}>RSVP Now</button>
       </div>
 
-      {modalIsOpen && <RSVPModal closeModal={closeModal} />}
+      <AccessibleModal isOpen={modalIsOpen} closeModal={closeModal} />
 
       <div className="footer-item">
         <p className="footer-date">12th January 2024</p>
@@ -94,4 +93,4 @@ function Inaccessible() {
   );
 }
 
-export default Inaccessible;
+export default Accessible;
